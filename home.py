@@ -5,7 +5,7 @@ import pandas as pd
 # from sklearn.model_selection import train_test_split
 # from sklearn.ensemble import RandomForestClassifier
 # from sklearn.metrics import accuracy_score
-# from pycaret.datasets import get_data
+from pycaret.datasets import get_data
 
 
 def upload_and_preview_data():
@@ -44,24 +44,24 @@ def select_sample_data_page():
     st.session_state.dataset_name = st.selectbox("Choose a dataset", sample_data_options)
 
     if st.button("Load Dataset"):
-        try:
-            file_path = f"Data/{st.session_state.dataset_name}.csv"
-            data = pd.read_csv(file_path)
+        # try:
+        #     file_path = f"Data/{st.session_state.dataset_name}.csv"
+        #     data = pd.read_csv(file_path)
 
-            if st.session_state.dataset_name == "airline":
-                data = data.reset_index()
+        #     if st.session_state.dataset_name == "airline":
+        #         data = data.reset_index()
 
-            st.success(f"{st.session_state.dataset_name} dataset loaded successfully")
-            st.dataframe(data)
+        #     st.success(f"{st.session_state.dataset_name} dataset loaded successfully")
+        #     st.dataframe(data)
 
-        except Exception as e:
-            st.error(f"Error loading dataset: {e}")
+        # except Exception as e:
+        #     st.error(f"Error loading dataset: {e}")
 
-        # if st.session_state.dataset_name == "airline":
-        #     data = pd.DataFrame(get_data(st.session_state.dataset_name))
-        #     data = data.reset_index()
-        # else:
-        #     data = get_data(st.session_state.dataset_name)
+        if st.session_state.dataset_name == "airline":
+            data = pd.DataFrame(get_data(st.session_state.dataset_name))
+            data = data.reset_index()
+        else:
+            data = get_data(st.session_state.dataset_name)
 
         if data is not None:
             return data

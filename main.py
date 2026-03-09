@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from home import home_page
 # from chat_with_data_llm import chatData
-# from edit_data import edit_dataframe
+from 2_Data_Editor.edit_data import edit_dataframe
 # from data_profiling import stProfile
 # from visualization import visualizatn
 # from featureEngineering import feature_engineering
@@ -159,8 +159,8 @@ def main():
         home_page()
     # elif nav_tab_op == "Chat with data":
     #     chatData()
-    # elif nav_tab_op == "Data Editor":
-    #     edit_dataframe()
+    elif nav_tab_op == "Data Editor":
+        edit_dataframe()
     # elif nav_tab_op == "Profiling":
     #     stProfile()
     # elif nav_tab_op == "Visualization":
