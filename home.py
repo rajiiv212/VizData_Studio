@@ -77,7 +77,7 @@ def home_page():
         st.markdown("""
             ### Your One-Stop Solution for Data Handling and Analysis
 
-            **Insightful Data Explorer** simplifies the data analysis and machine learning process through a user-friendly 
+            **VizData Studio** simplifies the data analysis and machine learning process through a user-friendly 
             interface. Effortlessly upload, interact with, edit, visualize, and engineer features from your data without coding. Explore 
             the capabilities of automated machine learning (AutoML) to effortlessly build predictive models.
 

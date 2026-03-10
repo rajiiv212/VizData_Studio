@@ -3,8 +3,8 @@ from streamlit_option_menu import option_menu
 from home import home_page
 # from chat_with_data_llm import chatData
 from page2_data_editor.edit_data import edit_dataframe
-# from data_profiling import stProfile
-# from visualization import visualizatn
+from page3_profilig.data_profiling import stProfile
+from page4_visualization.visualization import visualizatn
 # from featureEngineering import feature_engineering
 # from models_automl import ml_models
 # from about import about_info
@@ -161,10 +161,10 @@ def main():
     #     chatData()
     elif nav_tab_op == "Data Editor":
         edit_dataframe()
-    # elif nav_tab_op == "Profiling":
-    #     stProfile()
-    # elif nav_tab_op == "Visualization":
-    #     visualizatn()
+    elif nav_tab_op == "Profiling":
+        stProfile()
+    elif nav_tab_op == "Visualization":
+        visualizatn()
     # elif nav_tab_op == "Feature Engineering":
     #     feature_engineering()
     # elif nav_tab_op == "Auto ML":
