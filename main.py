@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from home import home_page
 # from chat_with_data_llm import chatData
-from 2_Data_Editor.edit_data import edit_dataframe
+from page2_data_editor.edit_data import edit_dataframe
 # from data_profiling import stProfile
 # from visualization import visualizatn
 # from featureEngineering import feature_engineering
