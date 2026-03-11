@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 from home import home_page
 # from chat_with_data_llm import chatData
 from page2_data_editor.edit_data import edit_dataframe
-from page3_profilig.data_profiling import stProfile
+from page3_profiling.data_profiling import stProfile
 from page4_visualization.visualization import visualizatn
 # from featureEngineering import feature_engineering
 # from models_automl import ml_models
