@@ -5,7 +5,7 @@ from home import home_page
 from page2_data_editor.edit_data import edit_dataframe
 from page3_profiling.data_profiling import stProfile
 from page4_visualization.visualization import visualizatn
-# from featureEngineering import feature_engineering
+from page5_feature_engineering.featureEngineering import feature_engineering
 # from models_automl import ml_models
 # from about import about_info
 # from contact_form import contact
