@@ -1,7 +1,8 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from pygwalker.api.streamlit import StreamlitRenderer # pyright: ignore[reportMissingImports]
-from auto_viz import autoVizs
+from page4_visualization.auto_viz import autoVizs
+# from auto_viz import autoVizs
 
 def pywalkr(dataset):
     try:
