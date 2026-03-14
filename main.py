@@ -165,10 +165,10 @@ def main():
         stProfile()
     elif nav_tab_op == "Visualization":
         visualizatn()
-    # elif nav_tab_op == "Feature Engineering":
-    #     feature_engineering()
-    # elif nav_tab_op == "Auto ML":
-    #     ml_models()
+    elif nav_tab_op == "Feature Engineering":
+        feature_engineering()
+    elif nav_tab_op == "Auto ML":
+        ml_models()
     # elif nav_tab_op == "About":
     #     about_info()
     # elif nav_tab_op == "Contact":
